@@ -20,6 +20,7 @@ public class KhachHangJPanel extends javax.swing.JPanel {
         
         QuanLyKhachHangController controller = new QuanLyKhachHangController(jpnView, btnAdd, jtfSearch);
         controller.setDataToModel();
+        controller.setEvent();
     }
 
     /**

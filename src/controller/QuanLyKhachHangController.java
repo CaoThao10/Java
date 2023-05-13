@@ -5,6 +5,7 @@
 package controller;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -120,7 +121,6 @@ public class QuanLyKhachHangController {
                 }
             }
         });
-        
         JScrollPane scrollPane = new JScrollPane();
         scrollPane.getViewport().add(table);
         scrollPane.setPreferredSize(new Dimension(1300,400));
@@ -132,5 +132,25 @@ public class QuanLyKhachHangController {
         jpnView.repaint();
         
     }
-   
+    public void setEvent(){
+        btnAdd.addMouseListener(new MouseAdapter(){
+            @Override
+            public void mouseClicked(MouseEvent e){
+                KhachHangJFrame jframe = new KhachHangJFrame(new KhachHang());
+                jframe.setTitle("Thêm thông tin khách hàng");
+                jframe.setLocationRelativeTo(null);
+                jframe.setResizable(false);
+                jframe.setVisible(true);
+            }
+           @Override
+            public void mouseEntered(MouseEvent e){
+                btnAdd.setBackground(new Color(0,200,83));
+            }
+            @Override
+            public void mouseExited(MouseEvent e){
+                 btnAdd.setBackground(new Color(100,221,23));
+            }
+        });
+    }
+
 }
