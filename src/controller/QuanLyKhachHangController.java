@@ -132,25 +132,46 @@ public class QuanLyKhachHangController {
         jpnView.repaint();
         
     }
+//    public void setEvent(){
+//        btnAdd.addMouseListener(new MouseAdapter(){
+//            @Override
+//            public void mouseClicked(MouseEvent e){
+//                KhachHangJFrame jframe = new KhachHangJFrame(new KhachHang());
+//                jframe.setTitle("Thêm thông tin khách hàng");
+//                jframe.setLocationRelativeTo(null);
+//                jframe.setResizable(false);
+//                jframe.setVisible(true);
+//            }
+//           @Override
+//            public void mouseEntered(MouseEvent e){
+//                btnAdd.setBackground(new Color(0,200,83));
+//            }
+//            @Override
+//            public void mouseExited(MouseEvent e){
+//                 btnAdd.setBackground(new Color(100,221,23));
+//            }
+//        });
+//    }
     public void setEvent(){
         btnAdd.addMouseListener(new MouseAdapter(){
             @Override
             public void mouseClicked(MouseEvent e){
-                KhachHangJFrame jframe = new KhachHangJFrame(new KhachHang());
+                KhachHangJFrame jframe = new KhachHangJFrame (new KhachHang());
                 jframe.setTitle("Thêm thông tin khách hàng");
                 jframe.setLocationRelativeTo(null);
                 jframe.setResizable(false);
                 jframe.setVisible(true);
             }
-           @Override
+            @Override
             public void mouseEntered(MouseEvent e){
                 btnAdd.setBackground(new Color(0,200,83));
             }
             @Override
             public void mouseExited(MouseEvent e){
-                 btnAdd.setBackground(new Color(100,221,23));
+                btnAdd.setBackground(new Color(100,221,23));
             }
         });
     }
+    
 
 }
