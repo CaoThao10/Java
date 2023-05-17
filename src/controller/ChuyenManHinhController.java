@@ -12,10 +12,10 @@ import java.awt.event.MouseListener;
 import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import shop.GioHangJPanel;
+import shop.SanPhamJPanel;
 import shop.HoaDonJPanel;
 import shop.KhachHangJPanel;
-import shop.ThongKeJPanel;
+import shop.ChiTietHoaDonJPanel;
 
 /**
  *
@@ -39,7 +39,7 @@ public class ChuyenManHinhController {
         
         root.removeAll();
         root.setLayout(new BorderLayout());
-        root.add(new ThongKeJPanel());
+        root.add(new ChiTietHoaDonJPanel());
         root.validate();
         root.repaint();
     }
@@ -69,10 +69,10 @@ public class ChuyenManHinhController {
         public void mouseClicked(MouseEvent e) {
             switch(kind){
                 case "ThongKe":
-                    node = new ThongKeJPanel();
+                    node = new ChiTietHoaDonJPanel();
                     break;
-                case "GioHang":
-                    node = new GioHangJPanel();
+                case "SanPham":
+                    node = new SanPhamJPanel();
                     break;
                 case "HoaDon":
                     node = new HoaDonJPanel();
@@ -81,7 +81,7 @@ public class ChuyenManHinhController {
                     node = new KhachHangJPanel();
                     break;
                 default:
-                    node = new ThongKeJPanel();
+                    node = new ChiTietHoaDonJPanel();
                     break;
             }
             root.removeAll();

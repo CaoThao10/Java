@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class HoaDon {
     private int ma_hoa_don;
-    private float tong_tien;
+    private int tong_tien;
     private int ma_khach_hang;
     private Date ngay_tao;
     private boolean tinh_trang;
@@ -25,11 +25,11 @@ public class HoaDon {
         this.ma_hoa_don = ma_hoa_don;
     }
 
-    public float getTong_tien() {
+    public int getTong_tien() {
         return tong_tien;
     }
 
-    public void setTong_tien(float tong_tien) {
+    public void setTong_tien(int tong_tien) {
         this.tong_tien = tong_tien;
     }
 

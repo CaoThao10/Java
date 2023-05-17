@@ -11,7 +11,7 @@ package mode;
 public class SanPham {
     private int ma_sp;
     private String ten_sp;
-    private float gia;
+    private int gia;
     private int so_luong;
     private boolean tinh_trang;
 
@@ -31,11 +31,11 @@ public class SanPham {
         this.ten_sp = ten_sp;
     }
 
-    public float getGia() {
+    public int getGia() {
         return gia;
     }
 
-    public void setGia(float gia) {
+    public void setGia(int gia) {
         this.gia = gia;
     }
 
@@ -54,5 +54,14 @@ public class SanPham {
     public void setTinh_trang(boolean tinh_trang) {
         this.tinh_trang = tinh_trang;
     }
-    
+//    @Override
+//    public String toString() {
+//    return "SanPham{" +
+//            "ma_sp=" + ma_sp +
+//            ", ten_sp='" + ten_sp + '\'' +
+//            ", gia='" + gia + '\'' +
+//            ", so_luong='" + so_luong + '\'' +
+//            ", tinh_trang=" + tinh_trang +
+//            '}';
+//}
 }

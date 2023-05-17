@@ -73,7 +73,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jpnKhachHang" max="32767" attributes="0"/>
-                          <Component id="jpnGioHang" max="32767" attributes="0"/>
+                          <Component id="jpnSanPham" max="32767" attributes="0"/>
                           <Component id="jpnHoaDon" alignment="0" max="32767" attributes="0"/>
                           <Component id="jpnThongKe" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -88,7 +88,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jpnKhachHang" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jpnGioHang" min="-2" max="-2" attributes="0"/>
+                      <Component id="jpnSanPham" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jpnHoaDon" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -183,7 +183,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jpnGioHang">
+            <Container class="javax.swing.JPanel" name="jpnSanPham">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="ff" type="rgb"/>
@@ -195,7 +195,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbGioHang" max="32767" attributes="0"/>
+                          <Component id="jlbSanPham" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -204,14 +204,14 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jlbGioHang" pref="54" max="32767" attributes="0"/>
+                          <Component id="jlbSanPham" pref="54" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jlbGioHang">
+                <Component class="javax.swing.JLabel" name="jlbSanPham">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="16" style="1"/>
@@ -220,7 +220,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Gi&#x1ecf; H&#xe0;ng"/>
+                    <Property name="text" type="java.lang.String" value="S&#x1ea3;n Ph&#x1ea9;m"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -304,7 +304,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Th&#x1ed1;ng K&#xea;"/>
+                    <Property name="text" type="java.lang.String" value="Chi Ti&#x1ebf;t H&#xf3;a &#x110;&#x1a1;n"/>
                   </Properties>
                 </Component>
               </SubComponents>

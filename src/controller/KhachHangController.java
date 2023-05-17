@@ -36,6 +36,8 @@ public class KhachHangController {
     
     public void setView(KhachHang khachHang){
         jtfMaKhachHang.setText("#" + khachHang.getMa_khach_hang());
+        jtfMaKhachHang.setText(Integer.toString(khachHang.getMa_khach_hang()));
+
         jtfTenKhachHang.setText(khachHang.getTen_khach_hang());
         jtfDiaChi.setText(khachHang.getDia_chi());
         jtfSoDienThoai.setText(khachHang.getSo_dien_thoai());
