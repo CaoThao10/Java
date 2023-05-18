@@ -37,9 +37,11 @@ public class ChiTietHoaDonJPanel extends javax.swing.JPanel {
         jtfSearch = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
 
+        btnAdd.setBackground(new java.awt.Color(204, 255, 204));
         btnAdd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnAdd.setText("Thêm");
 
+        jtfSearch.setBackground(new java.awt.Color(204, 255, 255));
         jtfSearch.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         jpnView.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N

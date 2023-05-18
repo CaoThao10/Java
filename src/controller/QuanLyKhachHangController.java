@@ -40,7 +40,7 @@ public class QuanLyKhachHangController {
     private KhachHangService khachHangService = null;
     
     
-   private String[] listColumn = {"Mã khách hàng", "STT", "Tên khách hàng", "Địa chỉ", "Số điện thoại", "Tình trạng"};
+   private String[] listColumn = {"STT", "Mã khách hàng",  "Tên khách hàng", "Địa chỉ", "Số điện thoại", "Tình trạng"};
    
    private TableRowSorter<TableModel> rowSorter = null;
 

@@ -42,7 +42,7 @@ public class QuanLySanPhamController {
     
     private SanPhamService sanPhamService = null;
     
-    private String[] listColumn = {"Mã sản phẩm", "STT", "Tên sản phẩm", "Giá", "Số lượng", "Tình trạng"};
+    private String[] listColumn = { "STT","Mã sản phẩm", "Tên sản phẩm", "Giá", "Số lượng", "Tình trạng"};
     
     private TableRowSorter<TableModel> rowSorter = null;
 
@@ -54,7 +54,7 @@ public class QuanLySanPhamController {
         this.sanPhamService = new SanPhamServiceImpl();
     }
     
-    public void setDataModel(){
+    public void setDataToModel(){
         List<SanPham> listItem = sanPhamService.getList();
         
         DefaultTableModel model = new ClassModelSanPham().setTableSanPham(listItem, listColumn);

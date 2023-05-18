@@ -30,12 +30,10 @@ public class KhachHangController {
         this.jcbTinhTrang = jcbTinhTrang;
     }
 
-    public KhachHangController(JButton jButton1, JTextField jtfMaKhachHang, JTextField jtfDiaChi, JTextField jtfSoDienThoai, JCheckBox jcbTinhTrang) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
     
     public void setView(KhachHang khachHang){
-        jtfMaKhachHang.setText("#" + khachHang.getMa_khach_hang());
+//        jtfMaKhachHang.setText("#" + khachHang.getMa_khach_hang());
         jtfMaKhachHang.setText(Integer.toString(khachHang.getMa_khach_hang()));
 
         jtfTenKhachHang.setText(khachHang.getTen_khach_hang());

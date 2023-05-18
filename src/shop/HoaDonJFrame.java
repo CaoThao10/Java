@@ -84,7 +84,7 @@ public class HoaDonJFrame extends javax.swing.JFrame {
         ps.executeUpdate();
         ps.close();
         cons.close();
-        JOptionPane.showMessageDialog(this, "Xóa sản phẩm thành công!");
+        JOptionPane.showMessageDialog(this, "Xóa hóa đơn thành công!");
     } catch (SQLException ex) {
         Logger.getLogger(HoaDonJFrame.class.getName()).log(Level.SEVERE, null, ex);
     }

@@ -19,7 +19,7 @@ public class SanPhamJPanel extends javax.swing.JPanel {
         initComponents();
         
         QuanLySanPhamController controller = new QuanLySanPhamController(jpnView, btnAdd, jtfSearch);
-        controller.setDataModel();
+        controller.setDataToModel();
         controller.setEvent();
     }
 
@@ -37,6 +37,9 @@ public class SanPhamJPanel extends javax.swing.JPanel {
         btnAdd = new javax.swing.JButton();
         jpnView = new javax.swing.JPanel();
 
+        jtfSearch.setBackground(new java.awt.Color(204, 255, 255));
+
+        btnAdd.setBackground(new java.awt.Color(204, 255, 204));
         btnAdd.setText("+ Thêm");
 
         javax.swing.GroupLayout jpnViewLayout = new javax.swing.GroupLayout(jpnView);

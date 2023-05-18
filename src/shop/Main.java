@@ -24,10 +24,10 @@ public class Main extends javax.swing.JFrame {
         setTitle("Quản lý shop");
         
         ChuyenManHinhController controller = new ChuyenManHinhController(jpnView);
-        controller.setView(jpnThongKe, jlbThongKe);
+        controller.setView(jpnChiTietHoaDon, jlbChiTietHoaDon);
         
         List<DanhMucBean> listItem = new ArrayList<>();
-        listItem.add(new DanhMucBean("ThongKe", jpnThongKe, jlbThongKe));
+        listItem.add(new DanhMucBean("ChiTietHoaDon", jpnChiTietHoaDon, jlbChiTietHoaDon));
         listItem.add(new DanhMucBean("SanPham", jpnSanPham, jlbSanPham));
         listItem.add(new DanhMucBean("HoaDon", jpnHoaDon, jlbHoaDon));
         listItem.add(new DanhMucBean("KhachHang", jpnKhachHang, jlbKhachHang));
@@ -49,15 +49,15 @@ public class Main extends javax.swing.JFrame {
         jlbSanPham = new javax.swing.JLabel();
         jpnHoaDon = new javax.swing.JPanel();
         jlbHoaDon = new javax.swing.JLabel();
-        jpnThongKe = new javax.swing.JPanel();
-        jlbThongKe = new javax.swing.JLabel();
+        jpnChiTietHoaDon = new javax.swing.JPanel();
+        jlbChiTietHoaDon = new javax.swing.JLabel();
         jpnView = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jpnMenu.setBackground(new java.awt.Color(204, 204, 204));
 
-        jPanel2.setBackground(new java.awt.Color(255, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(255, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -153,27 +153,27 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jpnThongKe.setBackground(new java.awt.Color(255, 204, 204));
+        jpnChiTietHoaDon.setBackground(new java.awt.Color(255, 204, 204));
 
-        jlbThongKe.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jlbThongKe.setForeground(new java.awt.Color(255, 255, 255));
-        jlbThongKe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jlbThongKe.setText("Chi Tiết Hóa Đơn");
+        jlbChiTietHoaDon.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jlbChiTietHoaDon.setForeground(new java.awt.Color(255, 255, 255));
+        jlbChiTietHoaDon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbChiTietHoaDon.setText("Chi Tiết Hóa Đơn");
 
-        javax.swing.GroupLayout jpnThongKeLayout = new javax.swing.GroupLayout(jpnThongKe);
-        jpnThongKe.setLayout(jpnThongKeLayout);
-        jpnThongKeLayout.setHorizontalGroup(
-            jpnThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnThongKeLayout.createSequentialGroup()
+        javax.swing.GroupLayout jpnChiTietHoaDonLayout = new javax.swing.GroupLayout(jpnChiTietHoaDon);
+        jpnChiTietHoaDon.setLayout(jpnChiTietHoaDonLayout);
+        jpnChiTietHoaDonLayout.setHorizontalGroup(
+            jpnChiTietHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnChiTietHoaDonLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jlbThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jlbChiTietHoaDon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        jpnThongKeLayout.setVerticalGroup(
-            jpnThongKeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnThongKeLayout.createSequentialGroup()
+        jpnChiTietHoaDonLayout.setVerticalGroup(
+            jpnChiTietHoaDonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnChiTietHoaDonLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jlbThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
+                .addComponent(jlbChiTietHoaDon, javax.swing.GroupLayout.DEFAULT_SIZE, 57, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -188,7 +188,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jpnKhachHang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jpnSanPham, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jpnHoaDon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jpnThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jpnChiTietHoaDon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jpnMenuLayout.setVerticalGroup(
@@ -202,7 +202,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jpnHoaDon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jpnThongKe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jpnChiTietHoaDon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 18, Short.MAX_VALUE))
         );
 
@@ -290,15 +290,15 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jlbChiTietHoaDon;
     private javax.swing.JLabel jlbHoaDon;
     private javax.swing.JLabel jlbKhachHang;
     private javax.swing.JLabel jlbSanPham;
-    private javax.swing.JLabel jlbThongKe;
+    private javax.swing.JPanel jpnChiTietHoaDon;
     private javax.swing.JPanel jpnHoaDon;
     private javax.swing.JPanel jpnKhachHang;
     private javax.swing.JPanel jpnMenu;
     private javax.swing.JPanel jpnSanPham;
-    private javax.swing.JPanel jpnThongKe;
     private javax.swing.JPanel jpnView;
     // End of variables declaration//GEN-END:variables
 }

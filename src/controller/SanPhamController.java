@@ -31,7 +31,7 @@ public class SanPhamController {
     }
 
     public void setView(SanPham sanPham){
-        jtfMaSanPham.setText("#" + sanPham.getMa_sp());
+//        jtfMaSanPham.setText("#" + sanPham.getMa_sp());
 //        jtfMaSanPham.setText("#" + Integer.parseInt(sanPham.getMa_sp()));
         jtfMaSanPham.setText(Integer.toString(sanPham.getMa_sp()));
 
@@ -41,8 +41,8 @@ public class SanPhamController {
         jtfGia.setText(Integer.toString(sanPham.getGia()));
 //        jtfSoLuong.setText(String.valueOf(sanPham.getSo_luong()));
 //        jtfGia.setText(String.valueOf(sanPham.getGia()));
-
-        jcbTinhTrang.setText(Boolean.toString(sanPham.isTinh_trang()));
+        jcbTinhTrang.setSelected(sanPham.isTinh_trang());
+//        jcbTinhTrang.setText(Boolean.toString(sanPham.isTinh_trang()));
     }
     
 }
